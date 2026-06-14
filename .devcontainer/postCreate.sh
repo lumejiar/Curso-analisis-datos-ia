@@ -1,4 +1,3 @@
-
 #!/bin/bash
 set -e
 
@@ -16,6 +15,7 @@ rm -rf /var/lib/apt/lists/*
 echo ">>> Instalando paquetes de Python para análisis de datos e IA..."
 pip install --upgrade pip
 pip install \
+    ipykernel \
     numpy \
     pandas \
     matplotlib \
