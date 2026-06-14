@@ -35,4 +35,22 @@ Desde tu fork (no desde el repo original), navega a `modulo-01-fundamentos/Cuade
 
 1. En Colab, ve a **Archivo → Guardar una copia en GitHub**.
 2. Selecciona **tu propio fork** (`tu-usuario/Curso-analisis-datos-ia`), rama `main`.
-3. Guarda el archivo en la ruta:
+3. Guarda el archivo en la ruta: modulo-01-fundamentos/Entregas/Nombre_Apellido.ipynb
+(reemplaza `Nombre_Apellido` por tu nombre completo, sin tildes ni espacios, usando guion bajo).
+4. Escribe un mensaje de confirmación y guarda.
+
+### Paso 3: Crea un Pull Request hacia el repositorio del curso
+
+1. Ve a tu fork en GitHub.
+2. Aparecerá un botón **"Contribute" → "Open pull request"** (o ve a la pestaña "Pull requests" del repo original y haz clic en "New pull request").
+3. Verifica que la base sea `lumejiar/Curso-analisis-datos-ia` (rama `main`) y que tu rama (`compare`) sea tu fork.
+4. Escribe un título, por ejemplo: "Entrega Módulo 1 - Nombre Apellido".
+5. Haz clic en **Create pull request**.
+
+### Paso 4: Revisión y retroalimentación
+
+El profesor revisará tu Pull Request, dejará comentarios, sugerencias y la nota directamente en el PR. Recibirás una notificación con esta retroalimentación. No es necesario hacer merge del PR para recibir la calificación.
+
+---
+
+[⬅ Volver al inicio del curso](../README.md)
