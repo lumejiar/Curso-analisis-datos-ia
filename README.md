@@ -98,3 +98,21 @@ Todo el software es gratuito y de código abierto:
 - [Fast.ai](https://www.fast.ai)
 - [Datos Abiertos Colombia](https://www.datos.gov.co)
 - [AgroNet](https://www.agronet.gov.co)
+
+---
+
+## 📚 Material Complementario y Recursos Recomendados
+
+Para profundizar en el dominio de Git y GitHub, se sugiere revisar los siguientes manuales oficiales, guías rápidas y entornos interactivos:
+
+### 📖 Libros y Manuales en PDF
+* **[Libro Oficial] Pro Git - Scott Chacon & Ben Straub:** La "Biblia" de Git. Es un libro completo, gratuito y de distribución legal. Para el inicio del curso, se recomienda leer con especial atención los **Capítulos 1 y 2**.
+  * 🌐 [Descargar PDF Gratis en Español](https://git-scm.com/book/es/v2)
+* **[Cheat Sheet] GitHub Git Cheat Sheet Oficial:** Una guía visual de referencia rápida de dos páginas con todos los comandos esenciales de consola que usaremos en los laboratorios.
+  * 🌐 [Descargar Chuleta en PDF](https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf)
+
+### 🎮 Tutoriales Interactivos y Gamificados
+* **Learn Git Branching:** Un simulador web excelente e interactivo en español. Te permite escribir comandos en una terminal ficticia y ver mediante diagramas de nodos dinámicos qué le ocurre a tus ramas y commits. ¡Ideal para perderle el miedo a la consola!
+  * 🕹️ [Jugar y Aprender en Línea](https://learngitbranching.js.org/?locale=es_ES)
+* **GitHub Skills:** Cursos oficiales de corta duración (10-15 minutos) guiados por un bot dentro de tu propia cuenta de GitHub. Muy recomendado el curso *“Introduction to GitHub”*.
+  * 🛠️ [Acceder a GitHub Skills](https://skills.github.com/)
