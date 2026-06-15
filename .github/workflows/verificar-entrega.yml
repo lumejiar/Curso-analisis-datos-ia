@@ -1,0 +1,49 @@
+name: Validacion de Entregas de Alumnos
+
+# El robot se activa cuando un alumno abre un Pull Request hacia la rama principal
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'modulo-**/Entregas/**.ipynb' # Solo se activa si modifican un notebook en Entregas
+
+jobs:
+  validar-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Copiar el código del repositorio en el servidor de GitHub
+    - name: Clonar repositorio
+      uses: actions/checkout@v4
+
+    # 2. Instalar Python en el servidor
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-style: '3.10'
+
+    # 3. Instalar herramientas de Jupyter para verificar el archivo
+    - name: Instalar dependencias de control
+      run: |
+        pip install nbformat
+
+    # 4. Verificar que el archivo .ipynb del alumno no esté roto o corrupto
+    - name: Validar estructura del Notebook
+      run: |
+        python -c "
+        import os, sys, nbformat
+        
+        # Buscar el archivo modificado en las entregas
+        for root, dirs, files in os.walk('.'):
+            for file in files:
+                if file.endswith('.ipynb') and 'Entregas' in root:
+                    path = os.path.join(root, file)
+                    print(f'Validando archivo: {path}')
+                    try:
+                        with open(path, 'r', encoding='utf-8') as f:
+                            nbformat.read(f, as_version=4)
+                        print('✅ El archivo JSON del notebook es válido.')
+                    except Exception as e:
+                        print(f'❌ Error crítico: El notebook {file} está corrupto o mal guardado. Detalle: {e}')
+                        sys.exit(1)
+        "
